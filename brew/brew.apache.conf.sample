@@ -1,0 +1,9 @@
+<VirtualHost *:80>
+    ServerAdmin dritoshi@gmail.com
+    # Brew
+    <Directory /var/www/brew>
+      #SetHandler r-handler
+      SetHandler r-script
+      RHandler brew::brew
+    </Directory>
+</VirtualHost>
